@@ -22,7 +22,16 @@ public class Ass5 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("what hath been wrought?");
+		
+		init();
+		engage();
+		
 
 	}//main
 
+	private static final void init() {}
+	private static final void engage() {}
+	
+	
+	
 }//class
