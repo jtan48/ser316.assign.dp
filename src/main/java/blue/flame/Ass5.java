@@ -12,12 +12,19 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.util.*;
+
 /**
  * @author jerry
  *
  */
-public class Ass5 {
+public class Ass5 implements Ass5K {
 
+	@SuppressWarnings("rawtypes")
+	private ArrayList<Villian> _villians = new ArrayList<Villian>();
+	private ArrayList<Hero> _her0es = new ArrayList<Hero>();
+	
+	
 	/**
 	 * 
 	 */
@@ -35,15 +42,13 @@ public class Ass5 {
 		
 		String filename = null == args[0] ? "jsonFile.json" : args[0];
 		
-		init(filename);
-		engage();
-		teardown();
+		new Ass5().init(filename).engage().teardown();
 		
 
 	}//main
 
 	//psfv init
-	private static final void init(String init_file) {
+	private final Ass5 init(String init_file) {
         //JSON parser object to parse read file
         JSONParser jsonParser = new JSONParser();
          
@@ -63,10 +68,12 @@ public class Ass5 {
             iox.printStackTrace();
         } catch (ParseException px) {
             px.printStackTrace();
-        }		
+        } finally { 
+        	return this;		
+        }
 	}//init
 	
-    private static final void parse_init(JSONObject list) {
+    private final void parse_init(JSONObject list) {
 
     	// get items within list
         JSONObject obj = (JSONObject) list.get("character");
@@ -76,25 +83,33 @@ public class Ass5 {
         System.out.println(char_name);
          
         // get character role (hero or villian)
-        String char_role = (String) obj.get("char_role");    
+        //String char_role = (String) obj.get("char_role");    
+        int char_role = (int)obj.get("char_role");    
         System.out.println(char_name);
 
         // get character strength (1 to 100)
-        String char_strength = (String) obj.get("char_strength");    
+        //String char_strength = (String) obj.get("char_strength");    
+        int char_strength = (int)obj.get("char_strength");    
         System.out.println(char_strength);
 
         // get character intelligence (1 to 100)
-        String char_smarts = (String) obj.get("char_smarts");    
+        //String char_smarts = (String) obj.get("char_smarts");    
+        int char_smarts = (int)obj.get("char_smarts");    
         System.out.println(char_smarts);
         
         // get character state (alive, dead, resting)
-        String char_state = (String) obj.get("char_state");    
+        //String char_state = (String) obj.get("char_state");    
+        int char_state = (int)obj.get("char_state");    
         System.out.println(char_state);
+        
+        //if(VILLIAN == Integer.parseInt(char_role)) _villians.add(CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(VILLIAN == char_role) _villians.add((Villian)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(HER0 == char_role) _her0es.add((Hero)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
         
     }//parse_init
 
     
-    private static final void engage() {}
-	private static final void teardown() {}
+    private final Ass5 engage() { return this; }
+	private final Ass5 teardown() { return this; }
 		
 }//class

@@ -7,11 +7,8 @@ package blue.flame;
  * @author jerry
  *
  */
-public final class CharacterFactory {
+public final class CharacterFactory implements Ass5K {
 
-	private static final int VILLIAN = 0;
-	private static final int HER0 = 1;
-	
 	/**
 	 * 
 	 */
