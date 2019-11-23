@@ -33,7 +33,5 @@ public class Ass5 {
 	private static final void init() {}
 	private static final void engage() {}
 	private static final void teardown() {}
-	
-	
-	
+		
 }//class
