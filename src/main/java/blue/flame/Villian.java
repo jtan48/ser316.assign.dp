@@ -1,0 +1,75 @@
+/**
+ * 
+ */
+package blue.flame;
+
+/**
+ * @author jerry
+ *
+ */
+public final class Villian extends Character {
+
+	private String name;
+	private int role;
+	private int strength;
+	private int smarts;
+	private int state;
+	
+	
+	/**
+	 * 
+	 */
+	/*
+	public Villian() {
+		// TODO Auto-generated constructor stub
+	}
+	*/
+
+	public Villian(String name, int role, int strength, int smarts, int state) {
+		// TODO Auto-generated constructor stub
+		name = name;
+		role = role;
+		strength = strength;
+		smarts = smarts;
+		state = state;
+	}//ctor
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return name;
+	}
+
+	@Override
+	public int getRole() {
+		// TODO Auto-generated method stub
+		return role;
+	}
+
+	@Override
+	public int getStrength() {
+		// TODO Auto-generated method stub
+		return strength;
+	}
+
+	@Override
+	public int getSmarts() {
+		// TODO Auto-generated method stub
+		return smarts;
+	}
+
+	@Override
+	public int getState() {
+		// TODO Auto-generated method stub
+		return state;
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}//main
+
+}//class
