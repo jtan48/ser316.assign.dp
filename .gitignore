@@ -10,3 +10,10 @@ spotbugs.xml
 # Ignore checkstyle
 .checkstyle
 
+# Ignore .settings
+.settings/
+
+# Ignore targegt
+target/
+
+
