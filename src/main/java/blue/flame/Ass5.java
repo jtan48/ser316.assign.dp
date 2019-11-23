@@ -19,6 +19,7 @@ public class Ass5 {
 	/**
 	 * @param args
 	 */
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("what hath been wrought?");
