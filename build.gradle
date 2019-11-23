@@ -29,6 +29,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
 
 	// for parsing json
+	implementation 'com.google.code.gson:gson:2.8.6'
 	implementation 'com.google.code.gson:gson:2.2.4'
 	
 	compile 'org.json:json:20180813'
