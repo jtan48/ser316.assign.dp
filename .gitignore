@@ -7,3 +7,6 @@ build
 # Ignore spotbugs.xml
 spotbugs.xml
 
+# Ignore checkstyle
+.checkstyle
+
