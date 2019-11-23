@@ -61,7 +61,8 @@ public class Ass5Test {
 	@Test
 	public final void testMain() {
 		//fail("Not yet implemented"); // TODO
-		Ass5.main(null);
+		//Ass5.main(null);
+		Ass5.main(new String[]{"jsonFile.json"});
 	}
 
 }

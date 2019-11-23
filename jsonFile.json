@@ -1,0 +1,38 @@
+[
+    {
+        "character": {
+            "char_name": "Cancer Cain",
+            "char_role": "villian",
+            "char_strength": "88",
+            "char_smarts": "18",
+            "char_state": "alive"
+        }
+    },
+    {
+        "character": {
+            "char_name": "Gluttony Grendel",
+            "char_role": "villian",
+            "char_strength": "68",
+            "char_smarts": "78",
+            "char_state": "alive"
+        }
+    },
+    {
+        "character": {
+            "char_name": "Ensign Kim",
+            "char_role": "hero",
+            "char_strength": "98",
+            "char_smarts": "68",
+            "char_state": "alive"
+        }
+    },
+    {
+        "character": {
+            "char_name": "Seven of Nine",
+            "char_role": "hero",
+            "char_strength": "48",
+            "char_smarts": "88",
+            "char_state": "alive"
+        }
+    }
+]
