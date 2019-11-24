@@ -12,14 +12,14 @@ import java.util.ArrayList;
  */
 public final class ExecuteFightOperation implements ExecuteOperation {
 
-	private Receiver receiver;
+	private Receiver receiver = new Receiver();
 
 	/*
 	private ArrayList<Character> _villians;
 	private ArrayList<Character> _her0es;
 	*/
-	private ArrayList<Villain> _villians;
-	private ArrayList<Hero> _her0es;
+	private ArrayList<Villain> _villains = new ArrayList<Villain>();
+	private ArrayList<Hero> _her0es = new ArrayList<Hero>();
 	
 	/**
 	 * 
@@ -37,14 +37,14 @@ public final class ExecuteFightOperation implements ExecuteOperation {
 	 */
 	public ExecuteFightOperation(ArrayList<Villain> villains, ArrayList<Hero> her0es) {
 		// TODO Auto-generated constructor stub
-		_villians = villains;
+		_villains = villains;
 		_her0es = her0es;
 	}//ctor
 
 	@Override
 	public String execute() {
 		// TODO Auto-generated method stub
-		return receiver.fight(_villians, _her0es);
+		return new Receiver().fight(_villains, _her0es);
 	}//execute
 
 	/**

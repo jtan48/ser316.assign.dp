@@ -82,25 +82,27 @@ public class Ass5 implements Ass5K {
         // get character name
         String char_name = (String) obj.get("char_name");    
         System.out.println(char_name);
+        
+        System.out.println("why you blowing chunks here");
          
         // get character role (hero or villian)
-        //String char_role = (String) obj.get("char_role");    
-        int char_role = (int)obj.get("char_role");    
+        String role = (String) obj.get("char_role");    
+        int char_role = Integer.parseInt(role);    
         System.out.println(char_name);
 
         // get character strength (1 to 100)
-        //String char_strength = (String) obj.get("char_strength");    
-        int char_strength = (int)obj.get("char_strength");    
+        String strength = (String) obj.get("char_strength");    
+        int char_strength = Integer.parseInt(strength);    
         System.out.println(char_strength);
 
         // get character intelligence (1 to 100)
-        //String char_smarts = (String) obj.get("char_smarts");    
-        int char_smarts = (int)obj.get("char_smarts");    
+        String smarts = (String) obj.get("char_smarts");    
+        int char_smarts = Integer.parseInt(smarts);    
         System.out.println(char_smarts);
         
         // get character state (alive, dead, resting)
-        //String char_state = (String) obj.get("char_state");    
-        int char_state = (int)obj.get("char_state");    
+        String state = (String) obj.get("char_state");    
+        int char_state = Integer.parseInt(state);    
         System.out.println(char_state);
         
         //if(VILLAIN == Integer.parseInt(char_role)) _villians.add(CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));

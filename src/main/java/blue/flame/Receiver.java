@@ -13,8 +13,8 @@ import blue.flame.Character;
  */
 public class Receiver implements Ass5K {
 
-	private ArrayList<Villain> _villains;
-	private ArrayList<Hero> _her0es;
+	private ArrayList<Villain> _villains = new ArrayList<Villain>();
+	private ArrayList<Hero> _her0es = new ArrayList<Hero>();
 
 	/**
 	 * 
