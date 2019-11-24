@@ -42,12 +42,12 @@ public class Ass5 implements Ass5K {
 		
 		String filename = null == args[0] ? "jsonFile.json" : args[0];
 		
-		new Ass5().init(filename).engage().teardown();
-		
+		// the idiom of zen
+		new Ass5().init(filename).execute().teardown();
 
 	}//main
 
-	//psfv init
+	//pf.this init
 	private final Ass5 init(String init_file) {
         //JSON parser object to parse read file
         JSONParser jsonParser = new JSONParser();
@@ -73,6 +73,7 @@ public class Ass5 implements Ass5K {
         }
 	}//init
 	
+	//pfv
     private final void parse_init(JSONObject list) {
 
     	// get items within list
@@ -108,8 +109,14 @@ public class Ass5 implements Ass5K {
         
     }//parse_init
 
-    
-    private final Ass5 engage() { return this; }
-	private final Ass5 teardown() { return this; }
+    //pf.this engage
+    private final Ass5 execute() { 
+
+    	
+    	return this; 
+    }//pf.this engage
+
+    //pf.this teardown
+    private final Ass5 teardown() { return this; }
 		
 }//class
