@@ -117,9 +117,6 @@ public class Receiver implements Ass5K {
 		// default realism
 		return DARKNESS;
 	}//fight
-
-	
-	
 	
 	/**
 	 * @param args
@@ -127,6 +124,6 @@ public class Receiver implements Ass5K {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	}
+	}//main
 
-}
+}//class
