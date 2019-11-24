@@ -101,7 +101,7 @@ public class Receiver implements Ass5K {
 
 			// this is it..
 			// this is where the proverbial horse is buried..
-			if(prosecutor.getStrength() > defendant.getStrength()) { // prosecutor wins -- got a conviction
+			if(prosecutor.getStrength() > defendant.getStrength() || RESTING == defendant.getState()) { // prosecutor wins -- got a conviction
 				prosecutor.setStrength(prosecutor.getStrength() + defendant.getStrength());
 				prosecutor.setSmarts(prosecutor.getSmarts() + defendant.getSmarts());
 				if(iter.hasNext()) { defendant = iter.next(); }
