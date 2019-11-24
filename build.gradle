@@ -9,6 +9,7 @@
 plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
+    id 'application'
 }
 
 repositories {
@@ -38,3 +39,5 @@ dependencies {
     compile fileTree(dir: 'lib', include: '*.jar')
 	
 }
+
+mainClassName = 'blue.flame.Ass5'
