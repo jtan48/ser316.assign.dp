@@ -7,7 +7,7 @@ package blue.flame;
  * @author jerry
  *
  */
-public final class Villian extends Character {
+public final class Villain extends Character {
 
 	private String name;
 	private int role;
@@ -20,12 +20,12 @@ public final class Villian extends Character {
 	 * 
 	 */
 	/*
-	public Villian() {
+	public Villain() {
 		// TODO Auto-generated constructor stub
 	}
 	*/
 
-	public Villian(String name, int role, int strength, int smarts, int state) {
+	public Villain(String name, int role, int strength, int smarts, int state) {
 		// TODO Auto-generated constructor stub
 		name = name;
 		role = role;

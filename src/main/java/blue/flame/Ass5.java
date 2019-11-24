@@ -21,7 +21,7 @@ import java.util.*;
 public class Ass5 implements Ass5K {
 
 	@SuppressWarnings("rawtypes")
-	private ArrayList<Villian> _villians = new ArrayList<Villian>();
+	private ArrayList<Villain> _villains = new ArrayList<Villain>();
 	private ArrayList<Hero> _her0es = new ArrayList<Hero>();
 	
 	
@@ -103,8 +103,8 @@ public class Ass5 implements Ass5K {
         int char_state = (int)obj.get("char_state");    
         System.out.println(char_state);
         
-        //if(VILLIAN == Integer.parseInt(char_role)) _villians.add(CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
-        if(VILLIAN == char_role) _villians.add((Villian)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        //if(VILLAIN == Integer.parseInt(char_role)) _villians.add(CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(VILLAIN == char_role) _villains.add((Villain)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
         if(HER0 == char_role) _her0es.add((Hero)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
         
     }//parse_init
@@ -112,11 +112,16 @@ public class Ass5 implements Ass5K {
     //pf.this engage
     private final Ass5 execute() { 
 
-    	
+        FightOperationExecutor executor = new FightOperationExecutor();
+        System.out.println(executor.executeOperation(new ExecuteFightOperation(_villains,_her0es)));
+        
     	return this; 
     }//pf.this engage
 
     //pf.this teardown
     private final Ass5 teardown() { return this; }
 		
+    
+    
+    
 }//class
