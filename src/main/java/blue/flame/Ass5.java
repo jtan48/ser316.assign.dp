@@ -18,7 +18,7 @@ import java.util.*;
  * @author jerry
  *
  */
-public class Ass5 implements Ass5K {
+public class Ass5 implements Ass5K, DuelTemplate {
 
 	@SuppressWarnings("rawtypes")
 	public ArrayList<Villain> _villains = new ArrayList<Villain>();
@@ -48,7 +48,7 @@ public class Ass5 implements Ass5K {
 	}//main
 
 	//pf.this init
-	private final Ass5 init(String init_file) {
+	public final Ass5 init(String init_file) {
         //JSON parser object to parse read file
         JSONParser jsonParser = new JSONParser();
          
@@ -112,7 +112,7 @@ public class Ass5 implements Ass5K {
     }//parse_init
 
     //pf.this engage
-    private final Ass5 execute() { 
+    public final Ass5 execute() { 
 
         FightOperationExecutor executor = new FightOperationExecutor();
         //System.out.println(executor.executeOperation(new ExecuteFightOperation(_villains,_her0es)));
@@ -123,9 +123,6 @@ public class Ass5 implements Ass5K {
     }//pf.this engage
 
     //pf.this teardown
-    private final Ass5 teardown() { return this; }
-		
-    
-    
-    
+    public final Ass5 teardown() { return this; }
+		    
 }//class
