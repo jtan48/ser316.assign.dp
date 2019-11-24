@@ -14,4 +14,6 @@ public interface Ass5K {
 	public static final String DARKNESS = "A new age of darkness begins.";
 	public static final String LIGHT = "A new age of light begins.";
 	
+	public static final String FIGHT = "FIGHT!";
+	
 }//interface

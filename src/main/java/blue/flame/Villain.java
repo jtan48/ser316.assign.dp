@@ -9,6 +9,20 @@ package blue.flame;
  */
 public final class Villain extends Character {
 
+	/**
+	 * @param strength the strength to set
+	 */
+	public void setStrength(int strength) {
+		this.strength = strength;
+	}
+
+	/**
+	 * @param smarts the smarts to set
+	 */
+	public void setSmarts(int smarts) {
+		this.smarts = smarts;
+	}
+
 	private String name;
 	private int role;
 	private int strength;

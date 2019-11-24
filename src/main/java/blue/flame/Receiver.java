@@ -24,6 +24,28 @@ public class Receiver implements Ass5K {
 	}
 
 	public String fight(ArrayList<Villain> villains, ArrayList<Hero> her0es) {
+		
+		Iterator<Villain> iter = villains.iterator();
+		Iterator<Hero> hero_iter = her0es.iterator();
+		while(iter.hasNext()) {
+			Villain defendant = iter.next();
+			Hero prosecutor = hero_iter.next();
+			
+			// announcer stuff.. and in this corner, etc etc
+			System.out.println(new StringBuffer(prosecutor.getName()).append(" versus ").append(defendant.getName()));
+			System.out.println(FIGHT);
+			System.out.println(new StringBuffer(prosecutor.getName()).append(" stats: ").append(prosecutor.toString()));
+			System.out.println(new StringBuffer(prosecutor.getName()).append(" stats: ").append(prosecutor.toString()));
+			
+			
+			
+			
+		}//while
+		
+		
+		
+		
+		
 		return DARKNESS;
 	}//fight
 	
