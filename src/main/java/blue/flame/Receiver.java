@@ -52,13 +52,13 @@ public class Receiver implements Ass5K {
 			if(prosecutor.getStrength() > defendant.getStrength()) { // prosecutor wins -- got a conviction
 				prosecutor.setStrength(prosecutor.getStrength() + defendant.getStrength());
 				prosecutor.setSmarts(prosecutor.getSmarts() + defendant.getSmarts());
-				defendant = iter.next();
-				if(null == defendant) { return LIGHT; }
+				if(iter.hasNext()) { defendant = iter.next(); }
+				else { return LIGHT; }
 			} else { // defendant wins -- got an acquittal
 				defendant.setStrength(defendant.getStrength() + prosecutor.getStrength());
 				defendant.setSmarts(defendant.getSmarts() + prosecutor.getSmarts());
-				prosecutor = hero_iter.next();
-				if(null == prosecutor) { return DARKNESS; }
+				if(hero_iter.hasNext()) { prosecutor = hero_iter.next(); }
+				else { return DARKNESS; }
 			}//if else
 		}//while
 		

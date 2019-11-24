@@ -115,9 +115,9 @@ public class Ass5 implements Ass5K, DuelTemplate {
     public final Ass5 execute() { 
 
         FightOperationExecutor executor = new FightOperationExecutor();
-        //System.out.println(executor.executeOperation(new ExecuteFightOperation(_villains,_her0es)));
+        System.out.println(executor.executeOperation(new ExecuteFightOperation(_villains,_her0es)));
         //System.out.println(new Receiver().fight(_villains, _her0es));
-        System.out.println(new Receiver().fight());
+        //System.out.println(new Receiver().fight());
         
     	return this; 
     }//pf.this engage
