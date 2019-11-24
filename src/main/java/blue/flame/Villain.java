@@ -13,21 +13,21 @@ public final class Villain extends Character {
 	 * @param strength the strength to set
 	 */
 	public void setStrength(int strength) {
-		this.strength = strength;
+		this._strength = strength;
 	}
 
 	/**
 	 * @param smarts the smarts to set
 	 */
 	public void setSmarts(int smarts) {
-		this.smarts = smarts;
+		this._smarts = smarts;
 	}
 
-	private String name;
-	private int role;
-	private int strength;
-	private int smarts;
-	private int state;
+	private String _name;
+	private int _role;
+	private int _strength;
+	private int _smarts;
+	private int _state;
 	
 	
 	/**
@@ -41,41 +41,41 @@ public final class Villain extends Character {
 
 	public Villain(String name, int role, int strength, int smarts, int state) {
 		// TODO Auto-generated constructor stub
-		name = name;
-		role = role;
-		strength = strength;
-		smarts = smarts;
-		state = state;
+		_name = name;
+		_role = role;
+		_strength = strength;
+		_smarts = smarts;
+		_state = state;
 	}//ctor
 
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return name;
+		return _name;
 	}
 
 	@Override
 	public int getRole() {
 		// TODO Auto-generated method stub
-		return role;
+		return _role;
 	}
 
 	@Override
 	public int getStrength() {
 		// TODO Auto-generated method stub
-		return strength;
+		return _strength;
 	}
 
 	@Override
 	public int getSmarts() {
 		// TODO Auto-generated method stub
-		return smarts;
+		return _smarts;
 	}
 
 	@Override
 	public int getState() {
 		// TODO Auto-generated method stub
-		return state;
+		return _state;
 	}
 
 	/**
