@@ -12,6 +12,19 @@ plugins {
     id 'application'
 }
 
+//create a single Jar with all dependencies
+task fatJar(type: Jar) {
+	manifest {
+        attributes 'Implementation-Title': 'Ass5 Jar',  
+        	'Implementation-Version': 1.0,
+        	'Main-Class': 'blue.flame.Ass5'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
+
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.

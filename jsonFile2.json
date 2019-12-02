@@ -1,0 +1,38 @@
+[
+    {
+        "character": {
+            "char_name": "Baby Yoda",
+            "char_role": "0",
+            "char_strength": "14",
+            "char_smarts": "62",
+            "char_state": "0"
+        }
+    },
+    {
+        "character": {
+            "char_name": "Maleficent",
+            "char_role": "0",
+            "char_strength": "28",
+            "char_smarts": "36",
+            "char_state": "0"
+        }
+    },
+    {
+        "character": {
+            "char_name": "Captain Sulu",
+            "char_role": "1",
+            "char_strength": "98",
+            "char_smarts": "58",
+            "char_state": "0"
+        }
+    },
+    {
+        "character": {
+            "char_name": "Mother of Dragons",
+            "char_role": "1",
+            "char_strength": "32",
+            "char_smarts": "78",
+            "char_state": "0"
+        }
+    }
+]
