@@ -40,13 +40,160 @@ public class Ass5 implements Ass5K, DuelTemplate {
 		// TODO Auto-generated method stub
 		System.out.println("what hath been wrought?");
 		
-		String filename = null == args[0] ? "jsonFile.json" : args[0];
+		try {
+			String filename = null == args[0] ? "jsonFile.json" : args[0];
 		
-		// the idiom of zen
-		new Ass5().init(filename).execute().teardown();
+			// the idiom of zen
+			new Ass5().init(filename).execute().teardown();
+		}catch (ArrayIndexOutOfBoundsException oobx) {
+			oobx.printStackTrace();
+
+			// the idiom of zen
+			new Ass5().init().execute().teardown();
+
+		}//try-catch
 
 	}//main
 
+	//pf.this init
+	public final Ass5 init() {
+
+		/////////////
+		//CANCER CAIN
+        // get character name
+        String char_name = "Cancer Cain";    
+        System.out.println(char_name);
+        
+        //System.out.println("why you blowing chunks here");
+         
+        // get character role (hero or villian)
+        String role = "0";    
+        int char_role = Integer.parseInt(role);    
+        System.out.println(char_name);
+
+        // get character strength (1 to 100)
+        String strength = "88";    
+        int char_strength = Integer.parseInt(strength);    
+        System.out.println(char_strength);
+
+        // get character intelligence (1 to 100)
+        String smarts = "18";    
+        int char_smarts = Integer.parseInt(smarts);    
+        System.out.println(char_smarts);
+        
+        // get character state (alive, dead, resting)
+        String state = "0";    
+        int char_state = Integer.parseInt(state);    
+        System.out.println(char_state);
+        
+        //if(VILLAIN == Integer.parseInt(char_role)) _villians.add(CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(VILLAIN == char_role) _villains.add((Villain)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(HER0 == char_role) _her0es.add((Hero)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+
+		
+		//////////////////
+		//GLUTTONY GRENDEL
+        // get character name
+        char_name = "Gluttony Grendel";    
+        System.out.println(char_name);
+        
+        //System.out.println("why you blowing chunks here");
+         
+        // get character role (hero or villian)
+        role = "0";    
+        char_role = Integer.parseInt(role);    
+        System.out.println(char_name);
+
+        // get character strength (1 to 100)
+        strength = "68";    
+        char_strength = Integer.parseInt(strength);    
+        System.out.println(char_strength);
+
+        // get character intelligence (1 to 100)
+        smarts = "78";    
+        char_smarts = Integer.parseInt(smarts);    
+        System.out.println(char_smarts);
+        
+        // get character state (alive, dead, resting)
+        state = "0";    
+        char_state = Integer.parseInt(state);    
+        System.out.println(char_state);
+        
+        //if(VILLAIN == Integer.parseInt(char_role)) _villians.add(CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(VILLAIN == char_role) _villains.add((Villain)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(HER0 == char_role) _her0es.add((Hero)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+		
+		//////////////////
+		//ENSIGN KIM
+        // get character name
+        char_name = "Ensign Kim";    
+        System.out.println(char_name);
+        
+        //System.out.println("why you blowing chunks here");
+         
+        // get character role (hero or villian)
+        role = "1";    
+        char_role = Integer.parseInt(role);    
+        System.out.println(char_name);
+
+        // get character strength (1 to 100)
+        strength = "98";    
+        char_strength = Integer.parseInt(strength);    
+        System.out.println(char_strength);
+
+        // get character intelligence (1 to 100)
+        smarts = "68";    
+        char_smarts = Integer.parseInt(smarts);    
+        System.out.println(char_smarts);
+        
+        // get character state (alive, dead, resting)
+        state = "0";    
+        char_state = Integer.parseInt(state);    
+        System.out.println(char_state);
+        
+        //if(VILLAIN == Integer.parseInt(char_role)) _villians.add(CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(VILLAIN == char_role) _villains.add((Villain)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(HER0 == char_role) _her0es.add((Hero)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+
+		//////////////////
+		//SEVEN OF NINE
+        // get character name
+        char_name = "Seven of Nine";    
+        System.out.println(char_name);
+        
+        //System.out.println("why you blowing chunks here");
+         
+        // get character role (hero or villian)
+        role = "1";    
+        char_role = Integer.parseInt(role);    
+        System.out.println(char_name);
+
+        // get character strength (1 to 100)
+        strength = "48";    
+        char_strength = Integer.parseInt(strength);    
+        System.out.println(char_strength);
+
+        // get character intelligence (1 to 100)
+        smarts = "88";    
+        char_smarts = Integer.parseInt(smarts);    
+        System.out.println(char_smarts);
+        
+        // get character state (alive, dead, resting)
+        state = "0";    
+        char_state = Integer.parseInt(state);    
+        System.out.println(char_state);
+        
+        //if(VILLAIN == Integer.parseInt(char_role)) _villians.add(CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(VILLAIN == char_role) _villains.add((Villain)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+        if(HER0 == char_role) _her0es.add((Hero)CharacterFactory.getCharacter(char_name, char_role, char_strength, char_smarts, char_state));
+
+        
+        
+        return this;		
+	}//init
+
+	
+	
 	//pf.this init
 	public final Ass5 init(String init_file) {
         //JSON parser object to parse read file
