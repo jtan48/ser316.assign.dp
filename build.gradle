@@ -10,7 +10,14 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     id 'application'
+    //id 'com.github.spotbugs' version '1.6.11'
 }
+
+
+
+//project.extensions.extraProperties.set('SpotBugsTask', com.github.spotbugs.SpotBugsTask)
+apply plugin: 'application'
+apply plugin: 'jacoco'
 
 //create a single Jar with all dependencies
 task fatJar(type: Jar) {
@@ -50,7 +57,47 @@ dependencies {
 	compile group: 'com.google.code.gson', name: 'gson', version: '2.6'
 	
     compile fileTree(dir: 'lib', include: '*.jar')
-	
+
+	compile "junit:junit:4.12"
+	//compile files('cls/')
+
+	//spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.7.1'
 }
 
 mainClassName = 'blue.flame.Ass5'
+
+/////////////////////////////////////////////////////////////////////////
+// Configure Checkstyle
+/////////////////////////////////////////////////////////////////////////
+ apply plugin: 'checkstyle'
+ checkstyle {
+   // Keep checkstyle a little quieter
+   ignoreFailures = true
+   showViolations = false
+ }
+
+ tasks.withType(Checkstyle) {
+   reports {
+     html.enabled = true
+     xml.enabled = false
+   }
+ }
+ checkstyle {
+     toolVersion = "8.8"
+ }
+
+
+///////////////////////////////////////////////////////////////////////////
+// Configure SpotBugs
+///////////////////////////////////////////////////////////////////////////
+//spotbugs {
+//   toolVersion = '3.1.12'
+//}
+
+// To generate an HTML report instead of XML
+//tasks.withType(com.github.spotbugs.SpotBugsTask) {
+//   reports {
+//     xml.enabled = false
+//     html.enabled = true
+//   }
+//}
